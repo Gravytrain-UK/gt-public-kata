@@ -14,8 +14,10 @@
  * - the next page (if possible)
  * - the last page (if that's not a duplicate)
  * - some `...` to indicate gaps in the sequence
- * E.g. page 3 of 10 = ['...', '2', '3', '4', '...', '10' ]
+ * E.g. page 3 of 10 = ['1', '2', '3', '4', '...', '10' ]
+ * page 4 of 10 = ['...', '3', '4', '5', '...', '10' ]
  * Page 2 of 10 = ['1', '2', '3', '4', '...', '10' ] 
+ * Page 3 of 3 = ['1', '2', '3']
  */
 function paginator(options) {
     return {
